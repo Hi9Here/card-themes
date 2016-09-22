@@ -168,51 +168,54 @@
       </a>
     <!-- End of Output Cards  -->
 
-    <!-- Card Input  -->
-      <!-- Shopping Card Input  -->   
-        <paper-material elevation="1">     
-            <paper-input label="shoppinglink"></paper-input>
-            <paper-input label="shoppingimage"></paper-input>
-            <paper-input label="shoppingtitle"></paper-input>
-            <paper-input label="shoppingsubtitle"></paper-input>
-            <paper-input label="shoppingcost"></paper-input>
-            <paper-input label="shoppingcompany"></paper-input>
+        <paper-material elevation="1">
+            <!-- Shopping Card Input  -->      
+            <paper-input label="Link"></paper-input>
+            <paper-input label="Image"></paper-input>
+            <paper-input label="Title"></paper-input>
+            <paper-input label="Subtitle"></paper-input>
+            <paper-input label="Cost"></paper-input>
+            <paper-input label="Company"></paper-input>
         </paper-material>
-      <!-- Website Card  -->
-        <paper-material elevation="1">     
-            <paper-input label="websitelink"></paper-input>
-            <paper-input label="websiteimage"></paper-input>
-            <paper-input label="websitetitle"></paper-input>
-            <paper-input label="websitesubtitle"></paper-input>
+        
+        <paper-material elevation="1">
+            <!-- Website Card  -->
+            <paper-input label="Link"></paper-input>
+            <paper-input label="Image"></paper-input>
+            <paper-input label="Title"></paper-input>
+            <paper-input label="Subtitle"></paper-input>
         </paper-material>
-      <!-- Hotel Card  -->
-        <paper-material elevation="1">     
-            <paper-input label="hotellink"></paper-input>
-            <paper-input label="hotelimage"></paper-input>
-            <paper-input label="hoteltitle"></paper-input>
-            <paper-input label="hotelsubtitle"></paper-input>
-            <paper-input label="hoteldate"></paper-input>
-            <paper-input label="hotelroom"></paper-input>
-            <paper-input label="hotelnn"></paper-input>
-            <paper-input label="hotelcost"></paper-input>
-            <paper-input label="hotelcompany"></paper-input>
+      
+        <paper-material elevation="1">
+            <!-- Hotel Card  -->    
+            <paper-input label="Link"></paper-input>
+            <paper-input label="Image"></paper-input>
+            <paper-input label="Title"></paper-input>
+            <paper-input label="Subtitle"></paper-input>
+            <paper-input label="Date"></paper-input>
+            <paper-input label="Room"></paper-input>
+            <paper-input label="Nights"></paper-input>
+            <paper-input type="number" label="People"></paper-input>
+            <paper-input label="Cost"></paper-input>
+            <paper-input label="Company"></paper-input>
         </paper-material>
-      <!-- Q and A Card  -->
-        <paper-material elevation="1">     
-            <paper-input label="question"></paper-input>
-            <paper-input label="answer"></paper-input>
+      
+        <paper-material elevation="1">
+            <!-- Q and A Card  -->     
+            <paper-input label="Question"></paper-input>
+            <paper-input label="Answer"></paper-input>
         </paper-material>
-      <!-- Event Card -->
-         <paper-material elevation="1">     
-            <paper-input label="eventlink"></paper-input>
-            <paper-input label="eventimage"></paper-input>
-            <paper-input label="eventtitle"></paper-input>
-            <paper-input label="eventsubtitle"></paper-input>
-            <paper-input label="eventdate"></paper-input>
-            <paper-input label="eventcost"></paper-input>
-            <paper-input label="eventcompany"></paper-input>
+      
+         <paper-material elevation="1">   
+            <!-- Event Card inputs-->
+            <paper-input label="Link"></paper-input>
+            <paper-input label="Image"></paper-input>
+            <paper-input label="Title"></paper-input>
+            <paper-input label="Subtitle"></paper-input>
+            <paper-input label="Date"></paper-input>
+            <paper-input label="Cost"></paper-input>
+            <paper-input label="Company"></paper-input>
         </paper-material>
-    <!-- End of Output Cards  -->
     
   </template>
 
@@ -220,13 +223,6 @@
     Polymer({
 
       is: 'card-themes',
-
-      properties: {
-        prop1: {
-          type: String,
-          value: 'card-themes',
-        },
-      },
 
     });
   </script>
