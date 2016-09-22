@@ -1,0 +1,6 @@
+{
+  "name": "shopping-card",
+  "short_name": "shopping-card",
+  "start_url": "/",
+  "display": "standalone"
+}
