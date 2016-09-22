@@ -94,18 +94,18 @@
     </style>
     <!-- Card Output  -->
       <!-- Shopping Card  -->
-      <a href="link">
+      <a href="{{Url}}">
         <paper-material elevation="1">     
           <paper-toolbar class="medium">  
             <iron-icon icon="shopping-cart"></iron-icon>
-            <div id="title"></div>   
-            <iron-image src="" preload sizing="cover"></iron-image>
+            <div title></div>   
+            <img src="{{userPic}}" />
           </paper-toolbar>
             <iron-image src="https://static1.fitbit.com/simple.b-cssdisabled-png.hc67aac363566dacfc23446af553b9bd8.pack?items=%2Fcontent%2Fassets%2Fflex%2Fimages%2Fapp-dashboard%2Fflex.png" preload sizing="contain"></iron-image>     
-            <h1 class="shoppingtitle">Fitbit</h1>
-            <h2 class="shoppingsubtitle">Fitbit Band</h2>
-            <h3 class="shoppingcost">£79.99</h3>
-            <h4 class="shoppingcompany">Amazon</h4>
+            <h1 class="title">{{Title}}</h1>
+            <h2 class="subtitle">{{Subtitle}}</h2>
+            <h3 class="cost">{{Cost}}</h3>
+            <h4 class="company">{{company}}</h4>
         </paper-material>
       </a>
       <!-- Website Card  -->
