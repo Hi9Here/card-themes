@@ -1,4 +1,3 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
@@ -120,30 +119,30 @@
         </paper-material>
       <!-- Hotel Card  -->
         <paper-material elevation="1">     
-          <paper-toolbar class="medium">  
-<iron-icon icon="assignment"></iron-icon>
-<div id="title"></div>
-<img src="{{userPic}}" />
-          </paper-toolbar>
-<iron-image src="http://www.carltonhotel.sg/assets/images/masthead/int-mast-executive-room-new.jpg" preload sizing="cover"></iron-image> 
-<h1 class="title">Royal York Hotel</h1>
-<h2 class="ubtitle">York, UK</h2>
-<h2 class="Date">Mon 22nd Oct 16</h2>
-<h2 class="Room">Double Room</h2>
-<h2 class="Nights">5 Nights 2 Adults</h2>
-<h3 class="shoppingcost">£129.99</h3>
-<h4 class="shoppingcompany">booking.com</h4>
+<paper-toolbar class="medium">  
+  <iron-icon icon="assignment"></iron-icon>
+  <div id="title"></div>
+  <img src="{{userPic}}" />
+</paper-toolbar>
+<iron-image src="{{ImageUrl}}" preload sizing="cover"></iron-image> 
+<h1 class="title">{{Title}}</h1>
+<h2 class="subtitle">{{Subtitle}}</h2>
+<h2 class="Date">{{Date}}</h2>
+<h2 class="Room">{{Room}}</h2>
+<h2 class="Info">{{Nights}} Nights {{Adults}} Adults</h2>
+<h3 class="Cost">£{{Cost}}</h3>
+<h4 class="Company">{{Company}}</h4>
         </paper-material>
       <!-- Q and A Card  -->
-        <paper-material elevation="1">     
-          <paper-toolbar class="medium">  
-<iron-icon icon="question-answer"></iron-icon>
-<div id="title"></div>   
-<img src="{{userPic}}" />
-          </paper-toolbar>   
-<h1 class="question">This is a Question</h1>
+        <paper-material elevation="1">
+<paper-toolbar class="medium">  
+  <iron-icon icon="question-answer"></iron-icon>
+  <div id="title"></div>
+  <img src="{{userPic}}" />
+</paper-toolbar>   
+<h1 class="question">{{Question}}</h1>
 <hr>
-<h2 class="answer">This is an Answer</h2>
+<h2 class="answer">{{Answer}}</h2>
         </paper-material>
       <!-- Event Card -->
         <paper-material elevation="1">     
@@ -152,19 +151,19 @@
 <div id="title"></div>   
 <img src="{{userPic}}" />
           </paper-toolbar>
-<iron-image src="data:image/png;base64,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" preload sizing="cover"></iron-image> 
-<h1 class="shoppingtitle">Google Summit</h1>
-<h2 class="shoppingsubtitle">London, UK</h2>
-<h2 class="shoppingdate">Mon 18th Oct 16</h2>
-<h3 class="shoppingcost">Free</h3>
-<h4 class="shoppingcompany">google.com</h4>
+<iron-image src="{{ImageUrl}}" preload sizing="cover"></iron-image> 
+<h1 class="title">{{title}}</h1>
+<h2 class="subtitle">{{subtitle}}</h2>
+<h2 class="date">{{date}}</h2>
+<h3 class="cost">{{cost}}</h3>
+<h4 class="company">{{company}}</h4>
         </paper-material>
     <!-- End of Output Cards  -->
 
         <paper-material elevation="1">
 <!-- Shopping Card Input  -->      
 <paper-input label="Link"></paper-input>
-<paper-input label="ImageUrl"></paper-input>
+<paper-input label="ImageURL"></paper-input>
 <paper-input label="Title"></paper-input>
 <paper-input label="Subtitle"></paper-input>
 <paper-input label="Cost" type="number" ><div perfix>£</div></paper-input>
@@ -187,7 +186,7 @@
 <paper-input label="Subtitle"></paper-input>
 <paper-input label="Date"></paper-input>
 <paper-input label="Room"></paper-input>
-<paper-input label="Nights"></paper-input>
+<paper-input type="number" label="Nights"></paper-input>
 <paper-input type="number" label="People"></paper-input>
 <paper-input label="Cost"></paper-input>
 <paper-input label="Company"></paper-input>
